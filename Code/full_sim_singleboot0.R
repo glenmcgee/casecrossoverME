@@ -33,8 +33,8 @@ beta <- rbind(beta0,beta1,0.017)
 #######################
 ##   Load packages   ##
 #######################
-library(survival)
-library(foreign)
+require(survival)
+require(foreign)
 # library(foreach)
 # library(doMPI)
 
