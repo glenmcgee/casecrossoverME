@@ -3,10 +3,13 @@ Code to run simulation study for "Corrections for Measurement Error Due to Delay
 
 ## Code Files
 #### full_sim_singleboot0.R
-Generates events based on true exposure time series. Defines functions for fitting marginal likelihood, regression calibration, and conditional score methods. along with function to generate events based on true exposure time series. Loops over RR simulated datasets, each with BB bootstrap resamples. Will run for beta1=0 (can uncomment for other exposure levels). Lower RR and BB for speed (fewer datasets and resamples).
+Runs simulations for given exposure effects. Defines functions for fitting marginal likelihood, regression calibration, and conditional score methods. along with function to generate events based on true exposure time series. Loops over RR simulated datasets, each with BB bootstrap resamples. Will run for beta=0 (uncomment for other levels). Lower RR and BB for speed (fewer datasets and resamples).
 
 #### MeasErr_tables.R
-Takes results of a simulation (from full_sim_singleboot0.R) and produces summary tables and boxplots. Will run for beta1=0 (can uncomment for other exposure levels).
+Takes results of a simulation (from full_sim_singleboot0.R) and produces summary tables and boxplots. Will run for beta=0 (uncomment for other exposure levels).
+
+#### real_data_analysis_singleboot.R
+Code for data analysis. NOTE: This will not run, since it requires data that are not publicly available.
 
 ## Data Files
 #### MLmatrix.txt
